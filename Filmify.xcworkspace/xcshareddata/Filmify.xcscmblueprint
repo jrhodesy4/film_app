@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "402EE590F60D5F67D564B33E0D963D9C3F105BC1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "402EE590F60D5F67D564B33E0D963D9C3F105BC1" : 9223372036854775807,
+    "63CF219F82D0489386CC61C8F3D619667C4099F8" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4354646C-89FA-466D-B122-DDBB1877A4A9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "402EE590F60D5F67D564B33E0D963D9C3F105BC1" : "Filmify\/",
+    "63CF219F82D0489386CC61C8F3D619667C4099F8" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Filmify",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Filmify.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jrhodesy4\/film_app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "402EE590F60D5F67D564B33E0D963D9C3F105BC1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jrhodesy4\/DojoAssignments.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "63CF219F82D0489386CC61C8F3D619667C4099F8"
+    }
+  ]
+}

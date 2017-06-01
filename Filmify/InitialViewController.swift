@@ -8,10 +8,16 @@
 
 import UIKit
 import Alamofire
+import CoreData
 
 class InitialViewController: UITableViewController, UISearchBarDelegate, addMovieDelegate {
     
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+
+    
     var movies = [NSDictionary]()
+    
+    var favorites = [Movie]()
     
     var searchResults = [NSDictionary]()
     
@@ -56,6 +62,8 @@ class InitialViewController: UITableViewController, UISearchBarDelegate, addMovi
             
         }
     }
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (isSearching) {
             return searchResults.count
@@ -111,6 +119,63 @@ class InitialViewController: UITableViewController, UISearchBarDelegate, addMovi
         tableView.reloadData()
     }
     func plusButtonPressed() {
+        
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let optionMenuController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        // Create UIAlertAction for UIAlertController
+        
+        let saveAction = UIAlertAction(title: "Add to WatchList", style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            let newEvent = NSEntityDescription.insertNewObject(forEntityName: "Movie", into: self.context) as! Movie
+            newEvent.title = self.movies[indexPath.row]["title"] as? String
+            newEvent.releaseDate = self.movies[indexPath.row]["release_date"] as? String
+            newEvent.synopsis = self.movies[indexPath.row]["overview"] as? String
+            newEvent.posterPath = self.movies[indexPath.row]["poster_path"] as? String
+            print("done")
+            if self.context.hasChanges {
+                do {
+                    try self.context.save()
+                    print("Saved changes to CoreData!")
+                } catch {
+                    print("\(error)")
+                }
+            }
+            self.performSegue(withIdentifier: "myListSegue", sender: self.movies[indexPath.row])
+//            self.editButtonPressed(c: self.contacts[indexPath.row])
+            
+            print("File has been added to WatchList")
+        })
+        
+                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {
+            (alert: UIAlertAction!) -> Void in
+            print("Cancel")
+        })
+        
+        // Add UIAlertAction in UIAlertController
+        
+
+        optionMenuController.addAction(saveAction)
+        optionMenuController.addAction(cancelAction)
+        
+        // Present UIAlertController with Action Sheet
+        
+        self.present(optionMenuController, animated: true, completion: nil)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
 

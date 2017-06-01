@@ -1,17 +1,17 @@
 //
-//  searchCellTableViewCell.swift
+//  topRatedCell.swift
 //  Filmify
 //
-//  Created by Jordan Robert Rhodes on 5/30/17.
+//  Created by Jordan Robert Rhodes on 5/31/17.
 //  Copyright © 2017 Jordan Robert Rhodes. All rights reserved.
 //
 
 import UIKit
 
-class searchCellTableViewCell: UITableViewCell {
+class topRatedCell: UITableViewCell {
 
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     
     
     override func awakeFromNib() {

@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import CoreData
 
 class watchListTableViewController: UITableViewController {
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
-    var myList = [NSDictionary]()
+    var myList = [Movie]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchAllData()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -22,22 +26,61 @@ class watchListTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        fetchAllData()
+        tableView.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "My Favorites"
+    }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return myList.count
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell") as! myListCell
+        cell.model = myList[indexPath.row]
+        return cell
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        context.delete(myList[indexPath.row])
+        if context.hasChanges {
+            do {
+                try context.save()
+                print("Saved changes to CoreData!")
+            } catch {
+                print("\(error)")
+            }
+        }
+        fetchAllData()
+        tableView.reloadData()
+    
+        
+    }
+    
+    func fetchAllData() {
+        
+        let itemRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Movie")
+        
+        do {
+            let results = try context.fetch(itemRequest)
+            myList = results as! [Movie]
+        } catch {
+            print("\(error)")
+        }
     }
 
     /*

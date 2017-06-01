@@ -10,6 +10,7 @@
 		81E6323A2128E5E1B7D48990 /* Pods_FilmifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7867D83720E56DC6B1752B2 /* Pods_FilmifyUITests.framework */; };
 		8C5013C91EDDFF5A005F4788 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5013C81EDDFF5A005F4788 /* SearchTableViewController.swift */; };
 		8C5013CB1EDE089B005F4788 /* searchCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5013CA1EDE089B005F4788 /* searchCellTableViewCell.swift */; };
+		8C5013CD1EDFBD21005F4788 /* customClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5013CC1EDFBD21005F4788 /* customClass.swift */; };
 		8C5955A11EDB8C6B00E399EF /* addMovieDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5955A01EDB8C6B00E399EF /* addMovieDelegate.swift */; };
 		8CAC77311ED8982F0084F907 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC77301ED8982F0084F907 /* AppDelegate.swift */; };
 		8CAC77331ED8982F0084F907 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC77321ED8982F0084F907 /* InitialViewController.swift */; };
@@ -24,6 +25,8 @@
 		8CAC77661ED8AF860084F907 /* watchListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC77651ED8AF860084F907 /* watchListTableViewController.swift */; };
 		8CAC77681ED8B1EE0084F907 /* MovieSpecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC77671ED8B1EE0084F907 /* MovieSpecViewController.swift */; };
 		8CAC776A1ED94BC00084F907 /* topRatedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC77691ED94BC00084F907 /* topRatedTableView.swift */; };
+		8CB61C101EDFE2B70071C784 /* myListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB61C0F1EDFE2B70071C784 /* myListCell.swift */; };
+		8CB61C121EDFE8C20071C784 /* topRatedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB61C111EDFE8C20071C784 /* topRatedCell.swift */; };
 		C44A21A9BD410D19F0A7A383 /* Pods_Filmify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633C08247F372ECE89307A37 /* Pods_Filmify.framework */; };
 		E8CDC3D5389F1D167D1FB70E /* Pods_FilmifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F1E4E43665E05762129EFB /* Pods_FilmifyTests.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +56,7 @@
 		802CCE9D65B4360D0744AFD5 /* Pods-Filmify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Filmify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Filmify/Pods-Filmify.release.xcconfig"; sourceTree = "<group>"; };
 		8C5013C81EDDFF5A005F4788 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		8C5013CA1EDE089B005F4788 /* searchCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchCellTableViewCell.swift; sourceTree = "<group>"; };
+		8C5013CC1EDFBD21005F4788 /* customClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customClass.swift; sourceTree = "<group>"; };
 		8C5955A01EDB8C6B00E399EF /* addMovieDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addMovieDelegate.swift; sourceTree = "<group>"; };
 		8CAC772D1ED8982F0084F907 /* Filmify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filmify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CAC77301ED8982F0084F907 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 		8CAC77651ED8AF860084F907 /* watchListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = watchListTableViewController.swift; sourceTree = "<group>"; };
 		8CAC77671ED8B1EE0084F907 /* MovieSpecViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSpecViewController.swift; sourceTree = "<group>"; };
 		8CAC77691ED94BC00084F907 /* topRatedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = topRatedTableView.swift; sourceTree = "<group>"; };
+		8CB61C0F1EDFE2B70071C784 /* myListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myListCell.swift; sourceTree = "<group>"; };
+		8CB61C111EDFE8C20071C784 /* topRatedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = topRatedCell.swift; sourceTree = "<group>"; };
 		979B03D5DEE0CD87687FE47C /* Pods-FilmifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmifyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FilmifyUITests/Pods-FilmifyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A7867D83720E56DC6B1752B2 /* Pods_FilmifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD8188C6D7AFDC647A929D4 /* Pods-FilmifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmifyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmifyUITests/Pods-FilmifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,11 +152,14 @@
 				8CAC77301ED8982F0084F907 /* AppDelegate.swift */,
 				8CAC77321ED8982F0084F907 /* InitialViewController.swift */,
 				8C5013C81EDDFF5A005F4788 /* SearchTableViewController.swift */,
+				8C5013CC1EDFBD21005F4788 /* customClass.swift */,
 				8C5013CA1EDE089B005F4788 /* searchCellTableViewCell.swift */,
 				8CAC77671ED8B1EE0084F907 /* MovieSpecViewController.swift */,
 				8CAC77651ED8AF860084F907 /* watchListTableViewController.swift */,
+				8CB61C0F1EDFE2B70071C784 /* myListCell.swift */,
 				8C5955A01EDB8C6B00E399EF /* addMovieDelegate.swift */,
 				8CAC77691ED94BC00084F907 /* topRatedTableView.swift */,
+				8CB61C111EDFE8C20071C784 /* topRatedCell.swift */,
 				8CAC77631ED8ABF20084F907 /* MyCustomCell.swift */,
 				8CAC77341ED8982F0084F907 /* Main.storyboard */,
 				8CAC773A1ED8982F0084F907 /* Assets.xcassets */,
@@ -477,11 +486,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CAC776A1ED94BC00084F907 /* topRatedTableView.swift in Sources */,
+				8C5013CD1EDFBD21005F4788 /* customClass.swift in Sources */,
 				8CAC77331ED8982F0084F907 /* InitialViewController.swift in Sources */,
+				8CB61C101EDFE2B70071C784 /* myListCell.swift in Sources */,
 				8CAC77641ED8ABF20084F907 /* MyCustomCell.swift in Sources */,
 				8CAC77391ED8982F0084F907 /* Filmify.xcdatamodeld in Sources */,
 				8CAC77681ED8B1EE0084F907 /* MovieSpecViewController.swift in Sources */,
 				8C5955A11EDB8C6B00E399EF /* addMovieDelegate.swift in Sources */,
+				8CB61C121EDFE8C20071C784 /* topRatedCell.swift in Sources */,
 				8CAC77661ED8AF860084F907 /* watchListTableViewController.swift in Sources */,
 				8C5013C91EDDFF5A005F4788 /* SearchTableViewController.swift in Sources */,
 				8CAC77311ED8982F0084F907 /* AppDelegate.swift in Sources */,
